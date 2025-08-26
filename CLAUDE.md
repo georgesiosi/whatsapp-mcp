@@ -11,7 +11,7 @@ This is a WhatsApp MCP (Model Context Protocol) server that enables Claude to in
 
 ## Architecture
 
-- **Data Storage**: All messages stored in SQLite (`whatsapp-bridge/store/messages.db` and `whatsapp-bridge/store/whatsapp.db`)
+- **Data Storage**: All messages stored in SQLite (`whatsapp-bridge/store/messages.db` and `whatsapp-bridge/store/whatsapp.db`) - these files are excluded from git to keep personal data local
 - **API Communication**: Python MCP server communicates with Go bridge via HTTP API on localhost:8080
 - **Authentication**: Uses WhatsApp Web's multidevice API with QR code authentication
 - **Media Handling**: Supports downloading and sending images, videos, audio, and documents

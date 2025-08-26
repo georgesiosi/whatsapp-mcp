@@ -48,3 +48,7 @@ wheels/
 .env
 .env.local
 .env.*.local
+
+# WhatsApp data - keep personal messages local
+*.db
+whatsapp-bridge/store/
